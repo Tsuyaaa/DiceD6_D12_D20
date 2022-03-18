@@ -13,10 +13,15 @@ class pagina2Dados : AppCompatActivity() {
 
         val valor = intent.getIntExtra("Resultado", 0)
 
+        val dado = intent.getStringExtra("Titulo Resultado")
+
         val textResultado = findViewById<TextView>(R.id.resultado)
 
         val buttonVoltar = findViewById<Button>(R.id.retorno)
 
+        val textResult = findViewById<TextView>(R.id.tituloResult)
+
+        textResult.text = dado.toString()
         textResultado.text = valor.toString()
 
         buttonVoltar.setOnClickListener{

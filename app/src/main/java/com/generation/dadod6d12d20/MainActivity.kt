@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             buttonRolar.setOnClickListener{
                 val valor = RolarDados(lados = 6)
                 intentDados.putExtra("Resultado", valor)
+                intentDados.putExtra("Titulo Resultado", "D6")
 
                 startActivity(intentDados)
             }
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             buttonRolar.setOnClickListener{
                 val valor = RolarDados(lados = 12)
                 intentDados.putExtra("Resultado", valor)
+                intentDados.putExtra("Titulo Resultado", "D12")
 
                 startActivity(intentDados)
             }
@@ -41,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             buttonRolar.setOnClickListener{
                 val valor = RolarDados(lados = 20)
                 intentDados.putExtra("Resultado", valor)
+                intentDados.putExtra("Titulo Resultado", "D20")
 
                 startActivity(intentDados)
             }
