@@ -11,4 +11,6 @@
     <string name="Resultado">TextView</string>
     <string name="button">Button</string>
     <string name="o_resultado">O RESULTADO É:</string>
+    <string name="voltar">Voltar</string>
+    <string name="rodar_novamente">Rodar novamente</string>
 </resources>

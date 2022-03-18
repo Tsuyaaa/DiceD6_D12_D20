@@ -13,6 +13,8 @@ class pagina2Dados : AppCompatActivity() {
 
         val valor = intent.getIntExtra("Resultado", 0)
 
+        val reRoll = intent.getIntExtra("LADOS", 0)
+
         val dado = intent.getStringExtra("Titulo Resultado")
 
         val textResultado = findViewById<TextView>(R.id.resultado)
@@ -21,8 +23,14 @@ class pagina2Dados : AppCompatActivity() {
 
         val textResult = findViewById<TextView>(R.id.tituloResult)
 
+        val buttonReroll = findViewById<Button>(R.id.reRoll)
+
         textResult.text = dado.toString()
         textResultado.text = valor.toString()
+
+        buttonReroll.setOnClickListener{
+            val valor = RolarDados(reRoll)
+        }
 
         buttonVoltar.setOnClickListener{
             finish()
@@ -31,4 +39,11 @@ class pagina2Dados : AppCompatActivity() {
 
 
     }
+
+    private fun RolarDados(lados: Int) {
+        val valor = (1..lados).random()
+
+        val textResultado = findViewById<TextView>(R.id.resultado)
+        textResultado.text = valor.toString()
+       }
 }
