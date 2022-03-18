@@ -7,4 +7,8 @@
     <string name="button3">Button</string>
     <string name="d12">D12</string>
     <string name="d20">D20</string>
+    <string name="Titulo">TextView</string>
+    <string name="Resultado">TextView</string>
+    <string name="button">Button</string>
+    <string name="o_resultado">O RESULTADO É:</string>
 </resources>

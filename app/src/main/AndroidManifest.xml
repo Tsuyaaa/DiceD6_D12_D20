@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DadoD6D12D20">
         <activity
+            android:name=".pagina2Dados"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
